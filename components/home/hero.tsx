@@ -34,7 +34,7 @@ const Hero = () => {
                     {
                         Interests.map((interest: { name: string, type: number })=>(
                             <div className={`${interest.type === 2 ? 'md:col-span-2 col-span-1' : 'col-span-1'} transition-all relative group h-[10rem] md:h-[12rem] lg:h-[16rem]`}>
-                                <Image src={`/_static/images/${interest.name.split(' ').join('_')}.svg`} width={100} height={100} alt={interest.name} className="z-1 object-cover h-full w-full absolute" />
+                                <Image src={`https://icedt-frontend-assessment.vercel.app/_static/images/${interest.name.split(' ').join('_')}.svg`} width={100} height={100} alt={interest.name} className="z-1 object-cover h-full w-full absolute" />
                                 <div className="w-full h-full z-3 transition-all relative text-8 group-hover:bg-[#FF5200]/60 bg-[#000]/60 flex flex-col items-center justify-center text-center font-didot text-white" style={{ zIndex: 9 }}>
                                     <Image src="/_static/icons/chevron-down.svg" width={50} height={50} className="w-3 mb-4 invisible group-hover:visible transition-all" alt="Check" />
                                     <p className="text-[1.5rem] xl:text-[2rem]">{interest.name}</p>
